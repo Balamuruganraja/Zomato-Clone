@@ -1,26 +1,23 @@
-// tailwind.config.js
 module.exports = {
+  mode: 'jit',
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    maxWidth: (theme, { breakpoints }) => ({
-      none: 'none',
-      xs: '20rem',
-      sm: '24rem',
-      md: '28rem',
-      lg: '32rem',
-      xl: '36rem',
-      '2xl': '42rem',
-      '3xl': '48rem',
-      '4xl': '56rem',
-      '5xl': '64rem',
-      '6xl': '72rem',
-      '90': 'calc(80%)',
-      full: '100%',
-      ...breakpoints(theme('screens')),
-    }),
-  
     extend: {
+      maxWidth: {
+        none: 'none',
+        xs: '20rem',
+        sm: '24rem',
+        md: '28rem',
+        lg: '32rem',
+        xl: '36rem',
+        '2xl': '42rem',
+        '3xl': '48rem',
+        '4xl': '56rem',
+        '5xl': '64rem',
+        '6xl': '72rem',
+        '7xl': '80rem',
+      },
       colors: {
         zomato: {
           50: '#ffe5e7',
